@@ -1,4 +1,4 @@
-package com.example.ApachePoiPoc;
+package com.example.ApachePoiPoc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
 
-public class ExcelToJsonConverter {
+public class ExcelToJsonConverterController {
     /**
      * Reads an Excel file and converts it to JSON.
      * @param excelFilePath Path to the Excel file (.xls or .xlsx)
