@@ -1,0 +1,164 @@
+2026-05-08 02:07:54.172 [main] INFO  c.e.A.ApachePoiPocApplication - Starting ApachePoiPocApplication using Java 17.0.6 with PID 12536 (C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc\target\classes started by C040625 in C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc)
+2026-05-08 02:07:54.179 [main] DEBUG c.e.A.ApachePoiPocApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-08 02:07:54.182 [main] INFO  c.e.A.ApachePoiPocApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 02:07:55.590 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-08 02:07:55.608 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:07:55.612 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 02:07:55.612 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-08 02:07:55.748 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1413 ms
+2026-05-08 02:07:56.366 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:07:56.407 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-08 02:07:56.416 [main] INFO  c.e.A.ApachePoiPocApplication - Started ApachePoiPocApplication in 2.846 seconds (process running for 3.854)
+2026-05-08 02:08:11.062 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 02:08:11.063 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 02:08:11.064 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-08 02:11:12.220 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-08 02:11:12.294 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-08 02:11:18.900 [main] INFO  c.e.A.ApachePoiPocApplication - Starting ApachePoiPocApplication using Java 17.0.6 with PID 13220 (C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc\target\classes started by C040625 in C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc)
+2026-05-08 02:11:18.905 [main] DEBUG c.e.A.ApachePoiPocApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-08 02:11:18.906 [main] INFO  c.e.A.ApachePoiPocApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 02:11:20.396 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-08 02:11:20.414 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:11:20.419 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 02:11:20.420 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-08 02:11:20.558 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1556 ms
+2026-05-08 02:11:21.291 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:11:21.336 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-08 02:11:21.349 [main] INFO  c.e.A.ApachePoiPocApplication - Started ApachePoiPocApplication in 3.117 seconds (process running for 4.165)
+2026-05-08 02:11:26.778 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 02:11:26.779 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 02:11:26.780 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-08 02:11:26.859 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:11:26.860 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:11:27.479 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:11:27.498 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:14:56.724 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-08 02:14:56.779 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-08 02:15:06.507 [main] INFO  c.e.A.ApachePoiPocApplication - Starting ApachePoiPocApplication using Java 17.0.6 with PID 29996 (C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc\target\classes started by C040625 in C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc)
+2026-05-08 02:15:06.512 [main] DEBUG c.e.A.ApachePoiPocApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-08 02:15:06.513 [main] INFO  c.e.A.ApachePoiPocApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 02:15:07.853 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-08 02:15:07.865 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:15:07.869 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 02:15:07.869 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-08 02:15:08.008 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1386 ms
+2026-05-08 02:15:08.643 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:15:08.709 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-08 02:15:08.732 [main] INFO  c.e.A.ApachePoiPocApplication - Started ApachePoiPocApplication in 2.829 seconds (process running for 3.847)
+2026-05-08 02:15:18.450 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 02:15:18.450 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 02:15:18.452 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-08 02:15:18.531 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:15:18.532 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:15:19.145 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:15:19.168 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:15:42.694 [http-nio-8080-exec-8] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: 
+2026-05-08 02:15:42.695 [http-nio-8080-exec-8] ERROR c.e.A.service.ExcelService - Uploaded file is empty
+2026-05-08 02:15:51.297 [http-nio-8080-exec-9] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:15:51.298 [http-nio-8080-exec-9] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:15:51.328 [http-nio-8080-exec-9] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:15:51.329 [http-nio-8080-exec-9] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:16:23.423 [http-nio-8080-exec-10] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:16:23.424 [http-nio-8080-exec-10] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:16:23.452 [http-nio-8080-exec-10] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:16:23.453 [http-nio-8080-exec-10] ERROR c.e.A.service.ExcelService - The Excel file is empty or does not contain a header row.
+2026-05-08 02:18:31.745 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:18:31.746 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:18:31.771 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:18:31.772 [http-nio-8080-exec-2] ERROR c.e.A.service.ExcelService - Unexpected error during Excel parsing
+java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:984)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:311)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+	at com.example.ApachePoiPoc.service.ExcelService.parseExcel(ExcelService.java:66)
+	at com.example.ApachePoiPoc.controller.ExcelController.uploadExcel(ExcelController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2026-05-08 02:21:39.579 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:21:39.582 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:21:39.612 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:21:39.614 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:21:52.093 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-08 02:21:52.175 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-08 02:21:56.259 [main] INFO  c.e.A.ApachePoiPocApplication - Starting ApachePoiPocApplication using Java 17.0.6 with PID 25228 (C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc\target\classes started by C040625 in C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc)
+2026-05-08 02:21:56.264 [main] DEBUG c.e.A.ApachePoiPocApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-08 02:21:56.265 [main] INFO  c.e.A.ApachePoiPocApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 02:21:57.676 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-08 02:21:57.691 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:21:57.694 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 02:21:57.694 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-08 02:21:57.832 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1452 ms
+2026-05-08 02:21:58.395 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:21:58.440 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-08 02:21:58.447 [main] INFO  c.e.A.ApachePoiPocApplication - Started ApachePoiPocApplication in 2.868 seconds (process running for 4.108)
+2026-05-08 02:22:01.222 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 02:22:01.223 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 02:22:01.225 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-08 02:22:01.350 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:22:01.355 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:22:01.990 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:22:02.019 [http-nio-8080-exec-2] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:24:57.765 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-08 02:24:57.958 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-08 02:25:06.799 [main] INFO  c.e.A.ApachePoiPocApplication - Starting ApachePoiPocApplication using Java 17.0.6 with PID 21184 (C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc\target\classes started by C040625 in C:\Users\C040625\IntelijIdea_code\ApachePoiPoc\ApachePoiPoc)
+2026-05-08 02:25:06.803 [main] DEBUG c.e.A.ApachePoiPocApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-08 02:25:06.804 [main] INFO  c.e.A.ApachePoiPocApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 02:25:08.448 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-08 02:25:08.463 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:25:08.466 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 02:25:08.466 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-08 02:25:08.608 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1715 ms
+2026-05-08 02:25:09.213 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 02:25:09.252 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-08 02:25:09.263 [main] INFO  c.e.A.ApachePoiPocApplication - Started ApachePoiPocApplication in 3.132 seconds (process running for 4.052)
+2026-05-08 02:25:14.399 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 02:25:14.400 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 02:25:14.402 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-08 02:25:14.512 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Starting to parse Excel file: Apache_poi_poc.xlsx
+2026-05-08 02:25:14.513 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - File received: Apache_poi_poc.xlsx
+2026-05-08 02:25:15.122 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Workbook opened successfully
+2026-05-08 02:25:15.142 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - Excel parsing completed. Total rows parsed: 2
+2026-05-08 02:25:15.143 [http-nio-8080-exec-3] INFO  c.e.A.service.ExcelService - **************************************
