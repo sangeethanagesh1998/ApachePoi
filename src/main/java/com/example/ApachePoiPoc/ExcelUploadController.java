@@ -1,7 +1,10 @@
 package com.example.ApachePoiPoc;
 
-import com.github.pjfanning.xlsx.StreamingReader;
-import org.apache.poi.ss.usermodel.*;
+import com.example.ApachePoiPoc.dto.ApiResponse;
+import com.example.ApachePoiPoc.service.ExcelProcessingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,66 +13,49 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.InputStream;
+import java.util.Map;
 
+/**
+ * REST Controller for Excel file upload operations
+ */
 @RestController
 @RequestMapping("api/excel")
 public class ExcelUploadController {
+    private static final Logger logger = LoggerFactory.getLogger(ExcelUploadController.class);
 
+    @Autowired
+    private ExcelProcessingService excelProcessingService;
 
+    /**
+     * Upload and process a large Excel file
+     *
+     * @param file the Excel file to upload and process
+     * @return ResponseEntity with ApiResponse containing processing results
+     */
     @PostMapping("/upload")
-    public ResponseEntity<String> uploadLargeExcel(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<ApiResponse<Map<String, Object>>> uploadLargeExcel(
+            @RequestParam("file") MultipartFile file) {
 
+        logger.info("Received file upload request for: {}", file.getOriginalFilename());
 
-        if (file.isEmpty()) {
-            return ResponseEntity.badRequest().body("File is empty");
-        }
+        try {
+            // Process the file using the service layer
+            Map<String, Object> result = excelProcessingService.processExcelFile(file);
 
-        // Validate file type
-        if (!file.getOriginalFilename().endsWith(".xlsx")) {
-            return ResponseEntity.badRequest().body("Only .xlsx files are supported");
-        }
+            int rowCount = (Integer) result.get("rowCount");
+            String message = String.format("Processed %d rows successfully from sheet: %s",
+                    rowCount, result.get("sheetName"));
 
-        try (InputStream is = file.getInputStream();
-             Workbook workbook = StreamingReader.builder()
-                     .rowCacheSize(100)     // Number of rows to keep in memory
-                     .bufferSize(4096)      // Stream buffer size
-                     .open(is)) {
+            logger.info("File upload successful: {}", message);
 
-            Sheet sheet = workbook.getSheetAt(0);
-            int rowCount = 0;
-
-            for (Row row : sheet) {
-                StringBuilder rowData = new StringBuilder();
-                for (Cell cell : row) {
-                    rowData.append(getCellValue(cell)).append(" | ");
-                }
-                // Here you can save to DB or process the row
-                System.out.println("Row " + rowCount + ": " + rowData);
-                rowCount++;
-            }
-
-            return ResponseEntity.ok("Processed " + rowCount + " rows successfully");
+            ApiResponse<Map<String, Object>> response = ApiResponse.success(message, result);
+            return ResponseEntity.ok(response);
 
         } catch (Exception e) {
-            e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Error processing file: " + e.getMessage());
+            logger.error("Error during file upload: {}", e.getMessage());
+            // GlobalExceptionHandler will handle the exception
+            throw e;
         }
-    }
-
-    // Helper method to safely get cell values
-    private String getCellValue(Cell cell) {
-        if (cell == null) return "";
-        return switch (cell.getCellType()) {
-            case STRING -> cell.getStringCellValue();
-            case NUMERIC -> DateUtil.isCellDateFormatted(cell)
-                    ? cell.getDateCellValue().toString()
-                    : String.valueOf(cell.getNumericCellValue());
-            case BOOLEAN -> String.valueOf(cell.getBooleanCellValue());
-            case FORMULA -> cell.getCellFormula();
-            default -> "";
-        };
     }
 
 }
